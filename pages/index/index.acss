@@ -1,0 +1,92 @@
+.temperature {
+  margin-left: 60rpx;
+  margin-top: 60rpx;
+}
+
+.temperature-value {
+  font-size: 36rpx;
+}
+
+.master-bedroom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40rpx;
+  height: 650px;
+  background: url('../../images/bg.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.button-text{
+  size: 20ch;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top: 100%;
+  left: 25%;
+}
+
+.master-bedroom .air-power-switch{
+  top: 60%;
+  left: 10%;
+  position: absolute;
+}
+.master-bedroom .air-power-switch-button {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  opacity: 0.8;
+  color: red;
+  border: 0;
+}
+.master-bedroom .air-power-switch-image{
+  width: 64px;
+  height: 64px;
+}
+
+.master-bedroom .light-power-switch{
+  top: 60%;
+  left: 40%;
+  position: absolute;
+}
+.master-bedroom .light-power-switch-button {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  opacity: 0.8;
+  color: #FFF;
+  border-color: red;
+  border: 0;
+}
+.master-bedroom .light-power-switch-image{
+  width: 64px;
+  height: 64px;
+}
+
+.master-bedroom .curtain-power-switch{
+  top: 60%;
+  left: 70%;
+  position: absolute;
+}
+.master-bedroom .curtain-power-switch-button {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  opacity: 0.8;
+  color: #FFF;
+  border-color: red;
+  border: 0;
+}
+.master-bedroom .curtain-power-switch-image{
+  width: 64px;
+  height: 64px;
+}
+
+.master-bedroom .temperature{
+  font-size: 90rpx;
+  top: 1%;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  /* width: 10%; */
+  color: white;
+}

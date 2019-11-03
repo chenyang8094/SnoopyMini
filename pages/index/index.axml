@@ -1,0 +1,52 @@
+<!-- 小程序收藏组件，更多高级用法请参考文档：https://docs.alipay.com/mini/component/component-favorite -->
+<view>
+  <tabs tabs="{{tabs}}" onTabClick="handleTabClick" onChange="handleTabChange" activeTab="{{activeTab}}" tabBarBackgroundColor="0xff">
+    <block a:for="{{tabs}}">
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:if="{{index === 0}}">
+        <view class="master-bedroom">
+          <view  class="temperature">
+             <text>温度:{{masterRoomTemperature}}</text>
+          </view>
+          <view class="air-power-switch">
+            <button class="air-power-switch-button" type="primary" plain="true" onTap="airPowerSwitchOntap">
+              <image class="air-power-switch-image" mode="scaleToFill" src="{{masterRoomAirPowerSwitchImage}}"/>
+            </button>
+            <text class="button-text">空 调</text>
+          </view>
+          <view class="light-power-switch">
+            <button class="light-power-switch-button" type="primary" plain="true" onTap="lightPowerSwitchOntap">
+              <image class="light-power-switch-image" mode="scaleToFill" src="{{masterRoomLightPowerSwitchImage}}"/>
+            </button>
+            <text class="button-text">电 灯</text>
+          </view>
+          <view class="curtain-power-switch">
+            <button class="curtain-power-switch-button" type="primary" plain="true" onTap="curtainPowerSwitchOntap">
+              <image class="curtain-power-switch-image" mode="scaleToFill" src="{{masterRoomCurtainPowerSwitchImage}}"/>
+            </button>
+            <text class="button-text">窗 帘</text>
+          </view>
+        </view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:if="{{index === 1}}">
+        <view class="tab-content">
+          <label>
+            <checkbox value="AngularJS" />
+            <text> AngularJS</text>
+          </label>
+        </view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 2}}">
+        <view class="tab-content">
+        </view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 3}}">
+        <view class="tab-content">
+        </view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 4}}">
+        <view class="tab-content">
+        </view>
+      </tab-content>
+    </block>
+  </tabs>
+</view>
